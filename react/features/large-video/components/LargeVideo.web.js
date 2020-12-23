@@ -71,7 +71,7 @@ class LargeVideo extends Component<Props> {
                 id = 'largeVideoContainer'
                 style = { style }>
                 <Subject />
-                <InviteMore />
+                {/*<InviteMore />*/}
                 <div id = 'sharedVideo'>
                     <div id = 'sharedVideoIFrame' />
                 </div>

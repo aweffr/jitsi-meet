@@ -12,9 +12,9 @@
         "failedToAdd": "Failed to add participants",
         "footerText": "Dialing out is disabled.",
         "googleEmail": "Google Email",
-        "inviteMoreHeader": "You are the only one in the meeting",
+        "inviteMoreHeader": "会议室只有您一人，等待其他人加入...",
         "inviteMoreMailSubject": "Join {{appName}} meeting",
-        "inviteMorePrompt": "Invite more people",
+        "inviteMorePrompt": "邀请其他人",
         "linkCopied": "Link copied to clipboard",
         "loading": "Searching for people and phone numbers",
         "loadingNumber": "Validating phone number",
@@ -892,7 +892,7 @@
     },
     "lonelyMeetingExperience": {
         "button": "Invite others",
-        "youAreAlone": "You are the only one in the meeting"
+        "youAreAlone": "会议室只有您一人，等待其他人加入..."
     },
     "helpView": {
         "header": "Help center"
