@@ -1131,19 +1131,20 @@ class Toolbox extends Component<Props, State> {
                         } />
                 );
             case 'chat':
-                return (
-                    <OverflowMenuItem
-                        accessibilityLabel =
-                            { t('toolbar.accessibilityLabel.chat') }
-                        icon = { IconChat }
-                        key = 'chat'
-                        onClick = { this._onToolbarToggleChat }
-                        text = {
-                            t(`toolbar.${
-                                _chatOpen ? 'closeChat' : 'openChat'}`
-                            )
-                        } />
-                );
+                return null;
+                // return (
+                //     <OverflowMenuItem
+                //         accessibilityLabel =
+                //             { t('toolbar.accessibilityLabel.chat') }
+                //         icon = { IconChat }
+                //         key = 'chat'
+                //         onClick = { this._onToolbarToggleChat }
+                //         text = {
+                //             t(`toolbar.${
+                //                 _chatOpen ? 'closeChat' : 'openChat'}`
+                //             )
+                //         } />
+                // );
             case 'closedcaptions':
                 return (
                     <ClosedCaptionButton
