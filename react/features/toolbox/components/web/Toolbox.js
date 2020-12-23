@@ -1402,7 +1402,10 @@ class Toolbox extends Component<Props, State> {
  */
 function _mapStateToProps(state) {
     const { conference, locked } = state['features/base/conference'];
-    let desktopSharingEnabled = JitsiMeetJS.isDesktopSharingEnabled();
+    // let desktopSharingEnabled = JitsiMeetJS.isDesktopSharingEnabled();
+    // window.navigator.userAgent:
+    //   "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) emc-dev/0.11.3-dev Chrome/78.0.3904.130 Electron/7.3.3 Safari/537.36"
+    let desktopSharingEnabled = false;
     const {
         callStatsID,
         enableFeaturesBasedOnToken

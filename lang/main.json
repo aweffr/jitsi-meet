@@ -613,7 +613,7 @@
         "about": "You can add a $t(lockRoomPassword) to your meeting. Participants will need to provide the $t(lockRoomPassword) before they are allowed to join the meeting.",
         "aboutReadOnly": "Moderator participants can add a $t(lockRoomPassword) to the meeting. Participants will need to provide the $t(lockRoomPassword) before they are allowed to join the meeting.",
         "insecureRoomNameWarning": "The room name is unsafe. Unwanted participants may join your conference. Consider securing your meeting using the security button.",
-        "securityOptions": "Security options"
+        "securityOptions": "安全设置"
     },
     "settings": {
         "calendar": {
@@ -716,7 +716,7 @@
             "raiseHand": "Toggle raise hand",
             "recording": "Toggle recording",
             "remoteMute": "Mute participant",
-            "security": "Security options",
+            "security": "安全设置",
             "Settings": "Toggle settings",
             "sharedvideo": "Toggle Youtube video sharing",
             "shareRoom": "Invite someone",
@@ -765,15 +765,15 @@
         "noAudioSignalDescSuggestion": "If you did not purposely mute it from system settings or hardware, consider switching to the suggested device.",
         "noAudioSignalDialInDesc": "You can also dial-in using:",
         "noAudioSignalDialInLinkDesc": "Dial-in numbers",
-        "noisyAudioInputTitle": "Your microphone appears to be noisy!",
-        "noisyAudioInputDesc": "It sounds like your microphone is making noise, please consider muting or changing the device.",
+        "noisyAudioInputTitle": "您的麦克风可能是噪音，请检查！",
+        "noisyAudioInputDesc": "听起来您的麦克风正在发出噪音，请考虑静音或更改设备。",
         "openChat": "Open chat",
-        "pip": "Enter Picture-in-Picture mode",
+        "pip": "画中画模式",
         "privateMessage": "Send private message",
         "profile": "Edit your profile",
         "raiseHand": "Raise / Lower your hand",
         "raiseYourHand": "Raise your hand",
-        "security": "Security options",
+        "security": "安全设置",
         "Settings": "Settings",
         "sharedvideo": "Share a YouTube video",
         "shareRoom": "Invite someone",
