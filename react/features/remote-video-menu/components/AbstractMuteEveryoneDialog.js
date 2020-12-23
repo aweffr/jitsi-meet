@@ -85,12 +85,16 @@ export default class AbstractMuteEveryoneDialog<P: Props> extends AbstractMuteRe
 export function abstractMapStateToProps(state: Object, ownProps: Props) {
     const { exclude, t } = ownProps;
 
-    const whom = exclude
+    let whom = exclude
         // eslint-disable-next-line no-confusing-arrow
         .map(id => id === getLocalParticipant(state).id
             ? t('dialog.muteEveryoneSelf')
             : getParticipantDisplayName(state, id))
         .join(', ');
+
+    if (whom === 'yourself') {
+      whom = '自己';
+    }
 
     return whom.length ? {
         content: t('dialog.muteEveryoneElseDialog'),
