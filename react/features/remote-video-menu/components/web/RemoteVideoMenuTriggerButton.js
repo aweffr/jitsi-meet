@@ -199,11 +199,11 @@ class RemoteVideoMenuTriggerButton extends Component<Props> {
                 );
             }
 
-            buttons.push(
-                <GrantModeratorButton
-                    key = 'grant-moderator'
-                    participantID = { participantID } />
-            );
+            // buttons.push(
+            //     <GrantModeratorButton
+            //         key = 'grant-moderator'
+            //         participantID = { participantID } />
+            // );
 
             if (!_disableKick) {
                 buttons.push(
@@ -215,20 +215,20 @@ class RemoteVideoMenuTriggerButton extends Component<Props> {
         }
 
         if (remoteControlState) {
-            buttons.push(
-                <RemoteControlButton
-                    key = 'remote-control'
-                    onClick = { onRemoteControlToggle }
-                    participantID = { participantID }
-                    remoteControlState = { remoteControlState } />
-            );
+            // buttons.push(
+            //     <RemoteControlButton
+            //         key = 'remote-control'
+            //         onClick = { onRemoteControlToggle }
+            //         participantID = { participantID }
+            //         remoteControlState = { remoteControlState } />
+            // );
         }
 
-        buttons.push(
-            <PrivateMessageMenuButton
-                key = 'privateMessage'
-                participantID = { participantID } />
-        );
+        // buttons.push(
+        //     <PrivateMessageMenuButton
+        //         key = 'privateMessage'
+        //         participantID = { participantID } />
+        // );
 
         if (onVolumeChange) {
             buttons.push(
