@@ -240,16 +240,16 @@ class MoreTab extends AbstractDialogTab<Props, State> {
                         ({ target: { checked } }) =>
                             super._onChange({ startVideoMuted: checked })
                     } />
-                <Checkbox
-                    isChecked = { followMeEnabled && !followMeActive }
-                    isDisabled = { followMeActive }
-                    label = { t('settings.followMe') }
-                    name = 'follow-me'
-                    // eslint-disable-next-line react/jsx-no-bind
-                    onChange = {
-                        ({ target: { checked } }) =>
-                            super._onChange({ followMeEnabled: checked })
-                    } />
+                {/*<Checkbox*/}
+                {/*    isChecked = { followMeEnabled && !followMeActive }*/}
+                {/*    isDisabled = { followMeActive }*/}
+                {/*    label = { t('settings.followMe') }*/}
+                {/*    name = 'follow-me'*/}
+                {/*    // eslint-disable-next-line react/jsx-no-bind*/}
+                {/*    onChange = {*/}
+                {/*        ({ target: { checked } }) =>*/}
+                {/*            super._onChange({ followMeEnabled: checked })*/}
+                {/*    } />*/}
             </div>
         );
     }

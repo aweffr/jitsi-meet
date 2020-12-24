@@ -89,36 +89,37 @@ class ProfileTab extends AbstractDialogTab<Props> {
             <div>
                 <div className = 'profile-edit'>
                     <div className = 'profile-edit-field'>
-                        <FieldTextStateless
-                            autoFocus = { true }
-                            compact = { true }
-                            id = 'setDisplayName'
-                            label = { t('profile.setDisplayNameLabel') }
-                            // eslint-disable-next-line react/jsx-no-bind
-                            onChange = {
-                                ({ target: { value } }) =>
-                                    super._onChange({ displayName: value })
-                            }
-                            placeholder = { t('settings.name') }
-                            shouldFitContainer = { true }
-                            type = 'text'
-                            value = { displayName } />
+                        { displayName }
+                        {/*<FieldTextStateless*/}
+                        {/*    autoFocus = { true }*/}
+                        {/*    compact = { true }*/}
+                        {/*    id = 'setDisplayName'*/}
+                        {/*    label = { t('profile.setDisplayNameLabel') }*/}
+                        {/*    // eslint-disable-next-line react/jsx-no-bind*/}
+                        {/*    onChange = {*/}
+                        {/*        ({ target: { value } }) =>*/}
+                        {/*            super._onChange({ displayName: value })*/}
+                        {/*    }*/}
+                        {/*    placeholder = { t('settings.name') }*/}
+                        {/*    shouldFitContainer = { true }*/}
+                        {/*    type = 'text'*/}
+                        {/*    value = { displayName } />*/}
                     </div>
-                    <div className = 'profile-edit-field'>
-                        <FieldTextStateless
-                            compact = { true }
-                            id = 'setEmail'
-                            label = { t('profile.setEmailLabel') }
-                            // eslint-disable-next-line react/jsx-no-bind
-                            onChange = {
-                                ({ target: { value } }) =>
-                                    super._onChange({ email: value })
-                            }
-                            placeholder = { t('profile.setEmailInput') }
-                            shouldFitContainer = { true }
-                            type = 'text'
-                            value = { email } />
-                    </div>
+                    {/*<div className = 'profile-edit-field'>*/}
+                    {/*    <FieldTextStateless*/}
+                    {/*        compact = { true }*/}
+                    {/*        id = 'setEmail'*/}
+                    {/*        label = { t('profile.setEmailLabel') }*/}
+                    {/*        // eslint-disable-next-line react/jsx-no-bind*/}
+                    {/*        onChange = {*/}
+                    {/*            ({ target: { value } }) =>*/}
+                    {/*                super._onChange({ email: value })*/}
+                    {/*        }*/}
+                    {/*        placeholder = { t('profile.setEmailInput') }*/}
+                    {/*        shouldFitContainer = { true }*/}
+                    {/*        type = 'text'*/}
+                    {/*        value = { email } />*/}
+                    {/*</div>*/}
                 </div>
                 { authEnabled && this._renderAuth() }
             </div>
@@ -168,6 +169,10 @@ class ProfileTab extends AbstractDialogTab<Props> {
             authLogin,
             t
         } = this.props;
+
+        if (authLogin) {
+            return null;
+        }
 
         return (
             <div>
