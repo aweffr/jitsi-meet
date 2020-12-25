@@ -844,15 +844,15 @@
     "videothumbnail": {
         "domute": "静音",
         "domuteOthers": "静音其他人",
-        "flip": "Flip",
+        "flip": "翻转摄像头",
         "grantModerator": "Grant Moderator",
-        "kick": "Kick out",
+        "kick": "踢出",
         "moderator": "Moderator",
-        "mute": "Participant is muted",
-        "muted": "Muted",
+        "mute": "参会人关闭了麦克风",
+        "muted": "已静音",
         "remoteControl": "Start / Stop remote control",
         "show": "Show on stage",
-        "videomute": "Participant has stopped the camera"
+        "videomute": "参会人关闭了摄像头"
     },
     "welcomepage": {
         "accessibilityLabel": {
