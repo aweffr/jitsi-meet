@@ -472,7 +472,7 @@
         "invitedOneMember": "{{name}} has been invited",
         "invitedThreePlusMembers": "{{name}} and {{count}} others have been invited",
         "invitedTwoMembers": "{{first}} and {{second}} have been invited",
-        "kickParticipant": "{{kicked}} was kicked by {{kicker}}",
+        "kickParticipant": "{{kicked}} 被踢出 来自: {{kicker}}",
         "me": "Me",
         "moderator": "Moderator rights granted!",
         "muted": "You have started the conversation muted.",

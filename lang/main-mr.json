@@ -447,7 +447,7 @@
         "invitedOneMember": "{{name}}आमंत्रित केले गेले आहे",
         "invitedThreePlusMembers": "{{name}} आणि {{count}} इतरांना आमंत्रित केले गेले आहे",
         "invitedTwoMembers": "{{first}} आणि {{second}} आमंत्रित केले गेले आहे",
-        "kickParticipant": "{{kicked}} was kicked by {{kicker}}",
+        "kickParticipant": "{{kicked}} 被踢出 来自: {{kicker}}",
         "me": "Me",
         "moderator": "नियंत्रक अधिकार मंजूर!",
         "muted": "आपण संभाषण निःशब्द केले आहे.",
@@ -475,7 +475,7 @@
     "passwordDigitsOnly": " पर्यंत {{number}} अंक",
     "poweredby": "द्वारा समर्थित",
     "prejoin": {
-       
+
         "audioAndVideoError": "ऑडिओ आणि व्हिडिओ त्रुटी:",
         "audioOnlyError": "ऑडिओ त्रुटी:",
         "audioTrackError": "ऑडिओ ट्रॅक तयार करू शकलो नाही.",
@@ -621,7 +621,7 @@
     },
     "toolbar": {
         "accessibilityLabel": {
-       
+
         },
         "addPeople": "आपल्या कॉलमध्ये लोकांना जोडा",
 "audioOnlyOff": "कमी बँडविड्थ मोड अक्षम करा",
