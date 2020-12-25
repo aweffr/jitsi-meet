@@ -46,6 +46,15 @@ export function getInitials(s: ?string) {
     const words = _.words(initialsBasis);
     let initials = '';
 
+    if (words.length === 1) { // e.g ['张三']
+        const name = words[0]
+        if (name.length >= 2) {
+            return name.substring(name.length - 2);
+        } else {
+            return name;
+        }
+    }
+
     for (const w of words) {
         (initials.length < 2) && (initials += w.substr(0, 1).toUpperCase());
     }
