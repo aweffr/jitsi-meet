@@ -89,7 +89,7 @@ export default class StatelessAvatar extends AbstractStatelessAvatar<Props> {
                         <text
                             dominantBaseline = 'central'
                             fill = 'rgba(255,255,255,.6)'
-                            fontSize = '40pt'
+                            fontSize = '30pt'
                             textAnchor = 'middle'
                             x = '50'
                             y = '50'>
