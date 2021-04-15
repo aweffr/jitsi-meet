@@ -150,6 +150,9 @@ const _throttledNotifyParticipantConnected = throttle((dispatch: Dispatch<any>) 
             },
             titleKey: 'notify.connectedOneMember'
         };
+        if (window.isJitsiSingleChat) {
+            notificationProps = null;
+        }
     }
 
     if (notificationProps) {
