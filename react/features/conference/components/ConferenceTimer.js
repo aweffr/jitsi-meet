@@ -116,7 +116,10 @@ class ConferenceTimer extends Component<Props, State> {
             return;
         }
 
-        const timerMsValue = currentValueUTC - refValueUTC;
+        let timerMsValue = currentValueUTC - refValueUTC;
+        if (window.activateAt > 0) {
+            timerMsValue = currentValueUTC - window.activateAt;
+        }
 
         const localizedTime = getLocalizedDurationFormatter(timerMsValue);
 

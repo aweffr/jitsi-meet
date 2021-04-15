@@ -52,10 +52,11 @@ class Subject extends Component<Props> {
      */
     render() {
         const { _hideConferenceTimer, _showParticipantCount, _subject, _visible } = this.props;
+        let subjectText = (window.jitsiAudioOnlyMode) ? "语音通话" : _subject;
 
         return (
             <div className = { `subject ${_visible ? 'visible' : ''}` }>
-                <span className = 'subject-text'>{ _subject }</span>
+                <span className = 'subject-text'>{ subjectText }</span>
                 { _showParticipantCount && <ParticipantsCount /> }
                 { !_hideConferenceTimer && <ConferenceTimer /> }
             </div>
