@@ -178,7 +178,11 @@ function _updateLocalParticipantFromUrl({ dispatch, getState }) {
     const urlParams
         = parseURLParams(getState()['features/base/connection'].locationURL);
     const urlEmail = urlParams['userInfo.email'];
-    const urlDisplayName = urlParams['userInfo.displayName'];
+    let urlDisplayName = urlParams['userInfo.displayName'];
+    if (window.onLoadSearchResult && window.onLoadSearchResult.get("display_name")) {
+        urlDisplayName = window.onLoadSearchResult.get("display_name");
+        console.log("[middleware]_updateLocalParticipantFromUrl, get display_name from onLoadSearchResult, urlDisplayName=", urlDisplayName);
+    }
 
     if (!urlEmail && !urlDisplayName) {
         return;
