@@ -14,6 +14,9 @@ import PrejoinApp from './features/prejoin/components/PrejoinApp';
 const logger = getLogger('index.web');
 const OS = Platform.OS;
 
+window.onLoadSearchResult = new URLSearchParams(location.search);
+
+
 /**
  * Renders the app when the DOM tree has been loaded.
  */
@@ -39,7 +42,7 @@ const hideVideoTagsFix = () => {
 }
 
 function receiveMessageFromIndex(event) {
-  console.log('receiveMessageFromIndex', event);
+  // console.log('receiveMessageFromIndex', event);
   if (event.data && event.data["jitsiType"] === "jitsiSingleChat") {
     window.isJitsiSingleChat = true;
     if (!window.closeJitsiSingleChatInv) {

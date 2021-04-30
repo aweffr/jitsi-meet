@@ -1409,6 +1409,9 @@ function _mapStateToProps(state) {
     if (window.navigator.userAgent.includes('emc')) {
       desktopSharingEnabled = true;
     }
+    if (window.onLoadSearchResult && window.onLoadSearchResult.get("desktopSharing") === "1") {
+      desktopSharingEnabled = true;
+    }
     const {
         callStatsID,
         enableFeaturesBasedOnToken
